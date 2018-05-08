@@ -136,7 +136,7 @@ tape('test invite.accept doesnt follow if already followed', function (t) {
 
 if (process.env.TRAVIS === 'true') {
   console.warn('IPv6 is unsupported under Travis CI, test skipped');
-  skipIPv6 = true;
+  let skipIPv6 = true;
 }
 
 tape('test invite.accept api with ipv6', { skip: skipIPv6 }, function (t) {
